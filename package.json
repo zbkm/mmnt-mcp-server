@@ -5,10 +5,15 @@
   "devDependencies": {
     "@types/bun": "latest"
   },
+  "scripts": {
+    "test": "bun test"
+  },
   "peerDependencies": {
     "typescript": "^5"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.8.0"
+    "@modelcontextprotocol/sdk": "^1.8.0",
+    "cheerio": "^1.0.0",
+    "iconv-lite": "^0.6.3"
   }
 }
