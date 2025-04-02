@@ -1,12 +1,19 @@
 {
   "name": "mmnt-mcp-server",
-  "module": "src/index.ts",
+  "version": "1.0.1",
+  "license": "MIT",
   "type": "module",
   "devDependencies": {
     "@types/bun": "latest"
   },
+  "bin": {
+    "mmnt-mcp-server": "./build/index.js"
+  },
+  "files": ["build"],
   "scripts": {
-    "test": "bun test"
+    "test": "bun test",
+    "build": "bun build src/index.ts --outdir build --target node",
+    "prepare": "bun run build"
   },
   "peerDependencies": {
     "typescript": "^5"
