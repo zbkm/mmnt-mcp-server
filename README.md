@@ -1,15 +1,26 @@
 # mmnt-mcp-server
+MCP server for the [Mamont](https://www.mmnt.ru/) search engine.
 
-To install dependencies:
+### Tools:
+- mmnt_search
+    * search query on search engine
+    * inputs
+        * query - query string
+        * page - page number
+- mmnt_cache
+    * retrieve page from search page cache
+    * inputs
+        * id - unique cache id
+        * onlyText - should the result be text only (no html)
 
-```bash
-bun install
+### Install
+```json
+{
+  "mcpServers": {
+    "mmnt": {
+      "command": "npx",
+      "args": ["-y", "mmnt-mcp-server"]
+    }
+  }
+}
 ```
-
-To run:
-
-```bash
-bun run src/index.ts
-```
-
-This project was created using `bun init` in bun v1.2.5. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
