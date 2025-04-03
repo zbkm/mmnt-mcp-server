@@ -1,0 +1,2 @@
+tests/mmnt/fixtures/* -linguist-detectable
+src/index.ts linguist-language=TypeScript
