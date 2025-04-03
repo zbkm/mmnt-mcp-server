@@ -1,6 +1,6 @@
 {
   "name": "mmnt-mcp-server",
-  "version": "1.0.1",
+  "version": "0.0.0",
   "license": "MIT",
   "type": "module",
   "devDependencies": {
@@ -9,7 +9,9 @@
   "bin": {
     "mmnt-mcp-server": "./build/index.js"
   },
-  "files": ["build"],
+  "files": [
+    "build"
+  ],
   "scripts": {
     "test": "bun test",
     "build": "bun build src/index.ts --outdir build --target node",
