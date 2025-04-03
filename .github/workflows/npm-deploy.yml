@@ -19,4 +19,4 @@ jobs:
       - run: jq '.version="${{ steps.get_version.outputs.version-without-v }}"' package.json > tmp.json && mv tmp.json package.json
       - run: bun publish --access public
         env:
-          NPMJS_AUTH_TOKEN: ${{ secrets.npm_token }}
+          NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
