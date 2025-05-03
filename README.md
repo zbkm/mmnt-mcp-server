@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/zbkm-mmnt-mcp-server-badge.png)](https://mseep.ai/app/zbkm-mmnt-mcp-server)
+
 # mmnt-mcp-server
 MCP server for the [Mamont](https://www.mmnt.ru/) search engine.
 
